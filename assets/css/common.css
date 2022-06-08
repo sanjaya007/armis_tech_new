@@ -123,6 +123,10 @@ html {
   background-color: #ffffff;
 }
 
+.nav-bar.black-nav-bar {
+  background-color: #040416;
+}
+
 .nav-bar .left-nav .logo-container img {
   height: 28px;
 }
