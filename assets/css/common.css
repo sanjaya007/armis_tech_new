@@ -89,6 +89,18 @@ html {
   transition: all 0.3s ease;
 }
 
+.content-container .content-box {
+  border-left: 1px solid #cacaca33;
+  border-right: 1px solid #cacaca33;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.content-container .content-box.white-content-box {
+  border-left: 1px solid #cacaca6b;
+  border-right: 1px solid #cacaca6b;
+}
+
 /* mobile nav  */
 .mobile-nav {
   position: fixed;
@@ -132,7 +144,7 @@ html {
 }
 
 .nav-bar .right-nav .link-container .nav-link {
-  font-size: 14px;
+  font-size: 16px;
   color: #ffffff;
   text-decoration: none;
   margin-right: 60px !important;
@@ -201,7 +213,8 @@ html {
 .footer-container .detail-box .link-box a {
   color: #ffffff;
   font-size: 16px;
-  margin-left: 20px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
 }
 
 .footer-container .detail-box .list h1 {
@@ -234,9 +247,6 @@ html {
   }
 }
 
-@media (max-width: 1200px) {
-}
-
 @media (max-width: 1023px) {
   .content-container {
     padding-left: 50px !important;
@@ -248,6 +258,15 @@ html {
   .nav-bar .right-nav .btn-container a {
     margin-left: 50px !important;
   }
+  .footer-container .detail-box .title h1 {
+    font-size: 46px;
+  }
+  .footer-container .detail-box .list:nth-child(1) {
+    padding-right: 2rem !important;
+  }
+  .footer-container .detail-box .list:nth-last-child(1) {
+    padding-left: 2rem !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -255,7 +274,7 @@ html {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
-  .nav-bar {
+  .nav-bar .nav-box {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
     flex-direction: row-reverse;
@@ -305,6 +324,12 @@ html {
   .footer-container .right-detail .list {
     padding: 0 !important;
   }
+  .footer-container .detail-box .list:nth-child(1) {
+    padding-right: 0 !important;
+  }
+  .footer-container .detail-box .list:nth-last-child(1) {
+    padding-left: 0 !important;
+  }
   .footer-container .right-detail .list:nth-child(1) {
     margin-bottom: 40px !important;
   }
@@ -332,6 +357,10 @@ html {
 
 @media (max-width: 550px) {
   .content-container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .content-container .content-box {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
