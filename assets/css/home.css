@@ -706,12 +706,10 @@
     top: calc(40% - 90px);
     left: calc(70% - 117px);
   }
-
   .team-container .star-img.star-img-second {
     top: 10px;
     left: calc(50% - 117px);
   }
-
   .team-container .star-img.star-img-third {
     top: calc(40% - 90px);
     left: calc(30% - 117px);
@@ -742,14 +740,30 @@
     top: calc(40% - 90px);
     left: calc(50% - 117px);
   }
-
   .team-container .star-img.star-img-second {
     top: 10px;
     left: calc(50% - 117px);
   }
-
   .team-container .star-img.star-img-third {
     display: none;
+  }
+  .team-container
+    .team-box
+    .right-box
+    .img-container
+    .ai-img
+    .img-group
+    .planet-img {
+    height: 300px;
+  }
+  .team-container
+    .team-box
+    .right-box
+    .img-container
+    .ai-img
+    .img-group
+    .spaceman-img {
+    height: 300px;
   }
 }
 
@@ -769,6 +783,24 @@
   .team-container .team-box .right-box .img-container .ai-img .full-space-img {
     height: 280px;
   }
+  .team-container
+    .team-box
+    .right-box
+    .img-container
+    .ai-img
+    .img-group
+    .planet-img {
+    height: 280px;
+  }
+  .team-container
+    .team-box
+    .right-box
+    .img-container
+    .ai-img
+    .img-group
+    .spaceman-img {
+    height: 280px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -783,5 +815,23 @@
   }
   .video-container .video-box .left-box .info p br {
     display: none;
+  }
+  .team-container
+    .team-box
+    .right-box
+    .img-container
+    .ai-img
+    .img-group
+    .planet-img {
+    height: 260px;
+  }
+  .team-container
+    .team-box
+    .right-box
+    .img-container
+    .ai-img
+    .img-group
+    .spaceman-img {
+    height: 260px;
   }
 }

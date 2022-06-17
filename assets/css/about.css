@@ -155,7 +155,7 @@
 
 @media (max-width: 1023px) {
   .head-container {
-    padding-bottom: 80px !important;
+    padding-bottom: 0 !important;
   }
   .head-container .head-box .left-box .title h2 {
     font-size: 42px;
@@ -189,8 +189,8 @@
     margin-top: -70px !important;
   }
   .head-container .head-box .right-box .img-container .img-box .credit-text {
-    left: calc(50% - 70px);
-    bottom: -50px;
+    left: calc(50% - 54px);
+    top: 80px;
   }
 }
 
@@ -265,6 +265,10 @@
 @media (max-width: 450px) {
   .head-container .head-box .right-box .img-container img {
     height: 440px;
+  }
+  .head-container .head-box .right-box .img-container .img-box .credit-text {
+    left: calc(50% - 60px);
+    top: 70px;
   }
 }
 
