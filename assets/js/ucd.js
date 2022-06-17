@@ -1,46 +1,52 @@
 $(window).on("load", function () {
   // scroll ucd container
   let elementHeight;
-  let firstBox, secondBox, thirdBox;
+  let firstBoxHeight, secondBoxHeight, thirdBoxHeight;
 
+  // get and check element height
   $(".scroll-info").each(function (index, element) {
     switch (index) {
       case 0:
-        firstBox = element.getBoundingClientRect().height;
+        firstBoxHeight = element.getBoundingClientRect().height;
         break;
       case 1:
-        secondBox = element.getBoundingClientRect().height;
+        secondBoxHeight = element.getBoundingClientRect().height;
         break;
       case 2:
-        thirdBox = element.getBoundingClientRect().height;
+        thirdBoxHeight = element.getBoundingClientRect().height;
         break;
     }
   });
 
-  if (firstBox === secondBox && firstBox === thirdBox) {
-    elementHeight = firstBox;
+  if (firstBoxHeight === secondBoxHeight && firstBoxHeight === thirdBoxHeight) {
+    elementHeight = firstBoxHeight;
   }
 
+  // update height on resize
   $(window).on("resize", function () {
     $(".scroll-info").each(function (index, element) {
       switch (index) {
         case 0:
-          firstBox = element.getBoundingClientRect().height;
+          firstBoxHeight = element.getBoundingClientRect().height;
           break;
         case 1:
-          secondBox = element.getBoundingClientRect().height;
+          secondBoxHeight = element.getBoundingClientRect().height;
           break;
         case 2:
-          thirdBox = element.getBoundingClientRect().height;
+          thirdBoxHeight = element.getBoundingClientRect().height;
           break;
       }
     });
 
-    if (firstBox === secondBox && firstBox === thirdBox) {
-      elementHeight = firstBox;
+    if (
+      firstBoxHeight === secondBoxHeight &&
+      firstBoxHeight === thirdBoxHeight
+    ) {
+      elementHeight = firstBoxHeight;
     }
   });
 
+  // scroll functionality
   $(".scroll-wrapper").on("scroll", function () {
     const currentPosition = $(this).scrollTop();
     switch (currentPosition) {
@@ -57,6 +63,19 @@ $(window).on("load", function () {
         $("#thirdScrollUcdList").addClass("active");
         break;
     }
+  });
+
+  // scroll click functionality
+  $(".scroll-ucd-list").on("click", function () {
+    const scrollId = $(this).attr("data-scroll-count");
+    $(".scroll-info").removeClass("snap-active");
+    $(".scroll-wrapper").animate(
+      { scrollTop: elementHeight * scrollId },
+      500,
+      function () {
+        $(".scroll-info").addClass("snap-active");
+      }
+    );
   });
 
   //   mobile ucd container

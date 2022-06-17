@@ -185,10 +185,17 @@
 }
 
 .product-container .product-box .right-box .scroll-wrapper .scroll-info {
-  scroll-snap-align: start;
   min-height: 282px;
   max-height: 282px;
   height: 282px;
+}
+
+.product-container
+  .product-box
+  .right-box
+  .scroll-wrapper
+  .scroll-info.snap-active {
+  scroll-snap-align: start;
 }
 
 /* mobile product container  */

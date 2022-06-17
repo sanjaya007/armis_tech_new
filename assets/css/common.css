@@ -194,6 +194,11 @@ html {
   background-color: #2e2cd7;
 }
 
+.cross-sign.active {
+  transition: all 0.5s ease;
+  transform: rotate(180deg);
+}
+
 /* footer  */
 .footer-wrapper {
   background-color: #2e2cd7;

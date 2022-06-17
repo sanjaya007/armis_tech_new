@@ -93,7 +93,12 @@
           </div>
           <div class="letter flex-css-row-start pb-5 mb-5 pt-4">
             <h1>A.I</h1>
-            <img src="./assets/images/close_light.png" alt="x" />
+            <img
+              src="./assets/images/close_light.png"
+              class="cross-sign"
+              id="crossSignFirst"
+              alt="x"
+            />
             <h1>AR</h1>
           </div>
         </div>
@@ -165,19 +170,21 @@
               src="./assets/images/logo2.png"
               class="scroll-product-logo active"
               id="firstScrollProductLogo"
+              data-scroll-count="0"
               alt="logo"
             />
             <img
               src="./assets/images/logo3.png"
               class="scroll-product-logo"
               id="secondScrollProductLogo"
+              data-scroll-count="1"
               alt="logo"
             />
           </div>
         </div>
         <div class="box right-box">
           <div class="scroll-wrapper">
-            <div class="info scroll-info">
+            <div class="info scroll-info snap-active">
               <p>
                 Roam is a personalised travel app for domestic tourist. In order
                 for Roam to create tailor-made system , our team listens to what
@@ -188,7 +195,7 @@
                 travel and stay.
               </p>
             </div>
-            <div class="info scroll-info pt-3">
+            <div class="info scroll-info snap-active pt-3">
               <p>
                 goRoam is an extension service of Roam. Users will be able to
                 view easily most of the clubs and bars around the valley and the

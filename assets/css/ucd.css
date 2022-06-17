@@ -109,10 +109,13 @@
 }
 
 .ucd-container .ucd-box .right-box .scroll-wrapper .scroll-info {
-  scroll-snap-align: start;
   min-height: 350px;
   max-height: 350px;
   height: 350px;
+}
+
+.ucd-container .ucd-box .right-box .scroll-wrapper .scroll-info.snap-active {
+  scroll-snap-align: start;
 }
 
 /* mobile ucd container  */
