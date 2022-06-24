@@ -671,9 +671,9 @@
   .company-container .company-box .list .info p {
     text-align: center;
   }
-  .company-container .company-box .vector-img {
+  /* .company-container .company-box .vector-img {
     display: none;
-  }
+  } */
   .team-container .team-box {
     flex-direction: column;
     padding-top: 80px !important;

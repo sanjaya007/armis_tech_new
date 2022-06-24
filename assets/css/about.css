@@ -109,8 +109,9 @@
 }
 
 .about-container .about-box .right-box .img-container img {
-  height: 470px;
-  margin-bottom: -140px !important;
+  height: 530px;
+  margin-bottom: -184px !important;
+  margin-right: -62px !important;
 }
 
 /* .footer container  */
@@ -150,6 +151,11 @@
   }
   .about-container .about-box .left-box .info p br {
     display: none;
+  }
+  .about-container .about-box .right-box .img-container img {
+    height: 490px;
+    margin-bottom: -180px !important;
+    margin-right: -60px !important;
   }
 }
 
@@ -192,21 +198,6 @@
     left: calc(50% - 54px);
     top: 80px;
   }
-}
-
-@media (max-width: 767px) {
-  .head-container .head-box .left-box .title h2 {
-    font-size: 36px;
-  }
-  .head-container .head-box .left-box .title img {
-    font-size: 22px;
-  }
-  .head-container .head-box .left-box .title h1 {
-    font-size: 36px;
-  }
-  .head-container .head-box .left-box .info p:nth-child(1) {
-    padding-bottom: 0 !important;
-  }
   .about-container .about-box {
     flex-direction: column;
   }
@@ -229,8 +220,23 @@
     justify-content: center;
     align-items: center;
   }
-  .footer-box .vector-img {
-    display: none;
+  .about-container .about-box .right-box .img-container img {
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .head-container .head-box .left-box .title h2 {
+    font-size: 36px;
+  }
+  .head-container .head-box .left-box .title img {
+    font-size: 22px;
+  }
+  .head-container .head-box .left-box .title h1 {
+    font-size: 36px;
+  }
+  .head-container .head-box .left-box .info p:nth-child(1) {
+    padding-bottom: 0 !important;
   }
 }
 
@@ -260,6 +266,9 @@
   .about-container .about-box .left-box .info p {
     font-size: 20px;
   }
+  .footer-box .vector-img {
+    top: 8px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -270,6 +279,10 @@
     left: calc(50% - 60px);
     top: 70px;
   }
+  .about-container .about-box .right-box .img-container img {
+    height: 460px;
+    margin-bottom: -174px !important;
+  }
 }
 
 @media (max-width: 400px) {
@@ -279,10 +292,18 @@
   .about-container .about-box .left-box .title h1 br {
     display: none;
   }
+  .about-container .about-box .right-box .img-container img {
+    height: 410px;
+    margin-bottom: -164px !important;
+  }
 }
 
 @media (max-width: 350px) {
   .head-container .head-box .right-box .img-container img {
     height: 380px !important;
+  }
+  .about-container .about-box .right-box .img-container img {
+    height: 370px;
+    margin-bottom: -156px !important;
   }
 }

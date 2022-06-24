@@ -269,9 +269,6 @@
   .head-container .head-box .title h1 {
     font-size: 56px;
   }
-  .footer-box .vector-img {
-    display: none;
-  }
 }
 
 @media (max-width: 550px) {
@@ -284,6 +281,9 @@
   .ucd-container .ucd-box.mobile-ucd-box .right-box {
     padding-left: 10px !important;
     padding-right: 10px !important;
+  }
+  .footer-box .vector-img {
+    right: -12px;
   }
 }
 
