@@ -1,4 +1,10 @@
 $(window).on("load", function () {
+  // preloader
+  $("#loaderBox").fadeOut(500, function () {
+    $("#armisBody").removeClass("fixed-body");
+    $(this).remove();
+  });
+
   // mobile nav toggle
   $(".modal-wrapper").fadeOut(1000, function () {
     $(".modal-wrapper").remove();
@@ -37,4 +43,10 @@ $(window).on("load", function () {
       scrollStatus = true;
     }, 500);
   }
+
+  // mouse cursor
+  $(window).mousemove(function (e) {
+    $("#mouseCursor").css({ top: e.pageY + "px", left: e.pageX + "px" });
+    console.log(e.target);
+  });
 });
