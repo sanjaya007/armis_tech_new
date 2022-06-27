@@ -75,6 +75,7 @@
 
 body {
   font-family: bgRegular;
+  overflow-x: hidden;
 }
 
 body.fixed-body {
@@ -308,6 +309,15 @@ html {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
+  z-index: 999999999999;
+}
+
+.mouse-cursor.blue-cursor {
+  background-color: #2e2cd787;
+}
+
+.mouse-cursor.white-cursor {
+  background-color: #ffffff54;
 }
 
 /* responsive  */
@@ -433,6 +443,9 @@ html {
 }
 
 @media (max-width: 550px) {
+  .loader-container .box h1 {
+    font-size: 50px;
+  }
   .content-container {
     padding-left: 10px !important;
     padding-right: 10px !important;
@@ -456,6 +469,9 @@ html {
 }
 
 @media (max-width: 450px) {
+  .loader-container .box h1 {
+    font-size: 40px;
+  }
   .footer-container .detail-box .title h1 {
     font-size: 34px;
   }

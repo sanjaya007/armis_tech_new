@@ -45,8 +45,41 @@ $(window).on("load", function () {
   }
 
   // mouse cursor
+  const commonContainer = "contentContainer";
   $(window).mousemove(function (e) {
+    $("#mouseCursor").show();
     $("#mouseCursor").css({ top: e.pageY + "px", left: e.pageX + "px" });
-    console.log(e.target);
+    const targetEl = e.target;
+    const elId = $(targetEl).attr("id");
+
+    if (elId === commonContainer) {
+      const parentBg = $(targetEl).attr("data-bg");
+      checkCursor(parentBg);
+    } else {
+      const parentEl = $(e.target).parents("div").last();
+      const parentBg = $(parentEl).attr("data-bg");
+      checkCursor(parentBg);
+    }
   });
+
+  const checkCursor = (bg) => {
+    switch (bg) {
+      case "white":
+        $("#mouseCursor").removeClass("white-cursor");
+        $("#mouseCursor").addClass("blue-cursor");
+        break;
+      case "black":
+        $("#mouseCursor").removeClass("blue-cursor");
+        $("#mouseCursor").addClass("white-cursor");
+        break;
+      case "blue":
+        $("#mouseCursor").removeClass("blue-cursor");
+        $("#mouseCursor").addClass("white-cursor");
+        break;
+      default:
+        $("#mouseCursor").removeClass("white-cursor");
+        $("#mouseCursor").addClass("blue-cursor");
+        break;
+    }
+  };
 });

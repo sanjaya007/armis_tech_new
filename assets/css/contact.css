@@ -48,6 +48,10 @@
   text-align: center;
 }
 
+.head-container .head-box .left-box .info p a {
+  color: #2e2cd7;
+}
+
 .head-container .head-box .right-box .img-container .img-box {
   position: relative;
   right: -23px;
